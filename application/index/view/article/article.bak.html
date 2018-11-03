@@ -1,0 +1,135 @@
+{include file="common/header"}
+
+<style>
+    .single .entry, .single2 .entry, .page2 .entry {
+        background: #fff;
+    }
+    #sidebar {
+        float: left;
+        margin-left: 10px;
+    }
+    .single .post, .single2 .post {
+        margin: 0;
+    }
+    .post {
+        margin: 0;
+    }
+    #content {
+        width: 930px;
+    }
+    #sidebar .widget {
+        padding: 0;
+    }
+</style>
+
+
+<body class="single2">
+{include file="common/menu"}
+<div id="wrapper">
+        <div id="container">
+            <div id="content">
+                <div class="post" id="post-19563" style="border-right: solid 1px #000000;
+                    margin-top: 10px;">
+                    {include file="common/position"}
+                    <div class="single_entry single2_entry">
+                        <div class="entry fewcomment">
+                            <div class="title_container">
+                                <h2 class="title single_title">
+                                    <span>{$article.title}</span><span class="title_date"></span></h2>
+                                <p class="single_info">时间：<?= date('Y-m-d H:m:s', $article['time']) ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    编辑：{$article.author}</p>
+                            </div>
+                            <div class="div-content">
+
+                                {$article.content}
+
+                                <p class="pagepage"></p>
+
+                                <center id="pagenav">
+                                </center>
+                                <div id="BottomNavOver" style="height: 80px;">
+                                    <div style="float: left; font-size: 12px;">
+
+                                    </div>
+                                    <div style="float: right; padding-right: 20px; width: 120px;" class="div">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="background-color: transparent;
+                                            border: 0px solid #EEEEEE; border-collapse: collapse; margin: 5px 0 10px;">
+                                            <tr>
+                                                <td style="border-width: 0px; padding: 0px; padding-right: 4px;">
+
+                                                </td>
+                                                <td style="border-width: 0px; padding: 0px;">
+                                                    <!-- JiaThis Button BEGIN -->
+                                                    <div class="jiathis_style">
+                                                        <a class="jiathis_button_qzone"></a><a
+                                                            class="jiathis_button_tqq"></a><a
+                                                            class="jiathis_button_renren">
+                                                    </a><a class="jiathis_button_kaixin001"></a><a
+                                                            href="http://www.jiathis.com/share"
+                                                            class="jiathis jiathis_txt jtico jtico_jiathis"
+                                                            target="_blank"></a>
+                                                    </div>
+                                                    <script type="text/javascript"
+                                                            src="http://v3.jiathis.com/code/jia.js?uid=1365565447348652"
+                                                            charset="utf-8"></script>
+                                                    <!-- JiaThis Button END -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div style="clear: both;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div class="comments_wrap" style="margin-top: 35px;">
+                                <a name="comment"></a>
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+
+                <!-- 右侧 -->
+
+                <div class="widget">
+
+                    <div style="background: url('__INDEX__/images/hots_bg.png') no-repeat scroll 0 0 transparent;width:230px;height:52px;margin-bottom:15px;margin-top: 50px">
+                    </div>
+                    <ul id="ulHot">
+                        {volist name="hotArticles" id="hotArticle"}
+                        <li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+                            <div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="{:url('article/article', array('artid'=>$hotArticle['id']))}" target="_blank">
+                                <?php if($hotArticle['thumb']) {?>
+                                <img src="__SITE_URL__{$hotArticle.thumb}" style="width: 84px;height: 55px">
+                                <?php }else {?>
+                                <img src="__INDEX__/images/default.jpg" style="width: 84px;height: 55px">
+                                <?php }?>
+                            </a></div>
+                            <div style="float:left;width:140px;height:52px; overflow:hidden;margin-left: 10px">
+                                <a href="{:url('article/article', array('artid'=>$hotArticle['id']))}" target="_blank" title="">
+                                {$hotArticle.title}
+                                </a>
+                            </div>
+                        </li>
+                    {/volist}
+                    </ul>
+                </div>
+
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+{include file="common/footer"}

@@ -1,0 +1,286 @@
+
+{include file="common/header"}
+
+<style>
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 30px;
+         left: auto;
+        width: 25%;
+        right: 0;
+    }
+    .swiper-container {
+        width: 800px;
+        height: 480px;
+        float:left
+    }
+    .swiper-slide {
+        width: 800px;
+        height: 480px;
+        position: relative;
+    }
+    .banner-title {
+        position: absolute;
+        width: 600px;
+        height: 40px;
+        padding-top: 10px;
+        line-height: 1.5;
+        overflow: hidden;
+        left: 0;
+        bottom: 0;
+        text-align: left;
+        padding-left: 50px;
+        background: -webkit-linear-gradient(left, rgba(0,0,0,.4) , rgba(0,0,0,0)); /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(right, rgba(0,0,0,.4) , rgba(0,0,0,0)); /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(right, rgba(0,0,0,.4) , rgba(0,0,0,0)); /* Firefox 3.6 - 15 */
+        background: linear-gradient(to right, rgba(0,0,0,.4) , rgba(0,0,0,0)); /* 标准的语法 */
+        color: #fff;
+    }
+    .swiper-slide img {
+        width: 800px;
+        height: 480px;
+    }
+    .swiper-button-next {
+        background: url("__INDEX__images/swiper_button.png") no-repeat;
+        background-position: -84px 0;
+        height: 55px;
+    }
+    .swiper-button-prev {
+        background: url("__INDEX__images/swiper_button.png") no-repeat;
+        background-position: 0 0;
+        height: 55px;
+    }
+    .swiper-container {
+        z-index: 0;
+    }
+</style>
+
+<body class="xh_body">
+
+{include file="common/menu"}
+
+<div id="xh_wrapper">
+       
+<input type="hidden" id="hdUrlFocus" />
+    <div class="xh_h_show">
+        <div class="xh_h_show_in">
+
+            <!--swiper常规版-->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    {volist name="recommendArticles" id="recommendArticle"}
+                    <div class="swiper-slide">
+                        <a href="{:url('article/article', array('artid'=>$recommendArticle['id']))}">
+                            <?php if($recommendArticle['thumb']) {?>
+                            <img onclick="articleJump({$recommendArticle.id})" src="__SITE_URL__{$recommendArticle.thumb}">
+                            <?php }else {?>
+                            <img onclick="articleJump({$recommendArticle.id})" src="__INDEX__/images/default.jpg">
+                            <?php }?>
+                        <span class="banner-title">{$recommendArticle.title}</span>
+                        </a>
+                    </div>
+                    {/volist}
+                </div>
+
+                <!--添加分页器-->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!--添加前后按钮-->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!--滚动条-->
+                <!--<div class="swiper-scrollbar"></div>-->
+            </div>
+
+            <div id="picshow_right" style="width: 340px;height: 480px;background: #fff">
+                <!--<h2>终极三问之:</h2>-->
+                <!--<p>1.我是谁？</p>-->
+                <!--<p>2.我在哪儿？</p>-->
+                <!--<p>3.我在干什么</p>-->
+                <img style="width: 340px;height: 480px" src="__INDEX__/images/mi.jpg" alt="">
+      <!--<a href="/life/416.html" target="_blank">-->
+    <!--<img src="__INDEX__/images/1-140206160415Y6.jpg" alt="COACH再度携手王力宏 踩单车演" width="255px" height="420px"></a>-->
+   <!---->
+            <!--<div id="picshow_right_cover" onclick="goanewurl()" style="cursor:pointer;position:absolute;top:495px;font-size:14px;width:213px;height:45px;line-height:45px;padding-left:42px;color:#ffffff;zoom:1;background-image:url(__INDEX__/images/focus-left-bg.png); background-repeat:no-repeat; background-color:#01A1ED;"></div>-->
+            <!--</div>-->
+        </div>
+    <div class="clear"></div>
+    </div>
+    </div>
+    <div id="xh_container">
+    <a name="new"></a>
+        <div id="xh_content" style="padding-right:10px;">
+            <div class="xh_area_h_3">
+                <div class="xh_area_title">
+                    <a href="javascript:" class="t"></a>
+                    <span class="r">
+                        {volist name="navCates" id="navCate"}
+                            <a href="__SITE_URL__index/{if condition="$navCate['type'] eq 1"}artlist/lis/cateid/{$navCate.id}
+                                {elseif condition="$navCate['type'] eq 2"}article/article/cateid/{$navCate.id}
+                                {elseif condition="$navCate['type'] eq 3"}imglist/lis/cateid/{$navCate.id}{/if}">
+                                {$navCate.catename}
+                            </a>
+                    {/volist}
+                     </span>
+                </div>
+                <br>
+
+                {volist name="newArticles" id="newArticle"}
+                <div class="xh_post_h_3 ofh">
+                    <div class="xh_265x265">
+                        <a target="_blank" href="{:url('article/article', array('artid'=>$newArticle['id']))}">
+                            <?php if($newArticle['thumb']) {?>
+                            <img src="__SITE_URL__{$newArticle.thumb}" alt="" height="240" width="400">
+                            <?php }else {?>
+                            <img src="__INDEX__/images/default.jpg" alt="" height="240" width="400">
+                            <?php }?>
+                        </a>
+                    </div>
+                    <div class="r ofh">
+                        <h2 class="xh_post_h_3_title ofh">
+                            <a target="_blank" class="index-title" href="{:url('article/article', array('artid'=>$newArticle['id']))}" title="">{$newArticle.title}</a>
+                        </h2>
+                        <span class="time"><?= date('Y-m-d H:m:s', $newArticle['time']) ?></span>
+                        <div class="xh_post_h_3_entry ofh" style="height: 80px">{$newArticle.desc}</div>
+                        <div class="b">
+                            <a href="{:url('article/article', array('artid'=>$newArticle['id']))}" class="xh_readmore" rel="nofollow">read more</a>
+                            <span class="xh_love">
+                                <span class="textcontainer">
+                                    <span style="margin-right: 15px">{$newArticle.like}</span>
+                                </span>
+                                <span class="bartext"></span>
+                            </span>
+                            <span class="xh_views">{$newArticle.click}</span>
+                        </div>
+                    </div>
+                    <span class="cat">
+                        <a href="__SITE_URL__index/{if condition=" $newArticle['type'] eq 1"}artlist/lis/cateid/{$newArticle.cateid}
+                            {elseif condition="$newArticle['type'] eq 2"}article/article/cateid/{$newArticle.cateid}
+                            {elseif condition="$newArticle['type'] eq 3"}imglist/lis/cateid/{$newArticle.cateid}{/if}"
+                           title="查看{$newArticle.catename}中的全部文章" rel="category tag">{$newArticle.catename}
+                        </a>
+                    </span>
+                </div>
+            {/volist}
+            </div>
+        </div>
+        <div id="xh_sidebar">
+
+         <div class="widget">
+
+             <div style="background: url('__INDEX__/images/hots_bg.png') no-repeat scroll 0 0 transparent;width:250px;height:52px;margin-bottom:15px;">
+             </div>
+             <ul id="ulHot">
+                 {volist name="hotIndexArticles" id="hotIndexArticle"}
+                 <li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+                     <div style="float:left;width:85px;height:55px; overflow:hidden;">
+                         <a href="{:url('article/article', array('artid'=>$hotIndexArticle['id']))}" target="_blank">
+                             <?php if($hotIndexArticle['thumb']) {?>
+                             <img src="__SITE_URL__{$hotIndexArticle.thumb}" style="width: 84px;height: 55px"/>
+                             <?php }else {?>
+                             <img src="__INDEX__/images/default.jpg" style="width: 84px;height: 55px"/>
+                             <?php }?>
+                         </a>
+                     </div>
+                     <div style="float:right;width:145px;height:52px; overflow:hidden;">
+                         <a href="{:url('article/article', array('artid'=>$hotIndexArticle['id']))}" target="_blank">
+                             {$hotIndexArticle.title}
+                         </a>
+                     </div>
+                 </li>
+                 {/volist}
+             </ul>
+                </div>
+
+            <div class="widget links">
+                <h3></h3>
+                <ul>
+                    {volist name="links" id="link"}
+                    <li><a href='{$link.url}' style="display: block" target='_blank'>{$link.title}</a></li>
+                    {/volist}
+                </ul>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    </div>
+
+ {include file="common/footer"}
+
+<script type="text/javascript">
+
+    function articleJump(artid) {
+        window.open('__SITE_URL__/index/article/article/artid/'+artid);
+    }
+
+    $(function () {
+
+        // cutWords($('.index-title'), 2);
+        // cutWords($('.index-desc'), 3);
+
+        //swiper常规版
+        var mySwiperHorizontal = new Swiper('.swiper-container', {
+            direction: 'horizontal', //横版竖版
+            autoplay: 3000, //设置自动轮播时间
+            speed: 600, //设置速度
+            loop: true,  //循环轮播
+            pagination: '.swiper-pagination', //分页器
+            prevButton: '.swiper-button-prev', //前按钮
+            nextButton: '.swiper-button-next', //后按钮
+            paginationClickable: 'swiper-pagination', //可点击导航器
+            keyboardControl: false, //键盘控制
+            mousewheelControl: false, //鼠标控制
+
+
+//        slidesPerView : 3, //显示图片数量,图片宽度不一致设置auto时自动分组
+//        spaceBetween: 30, //slider之间距离,可与slidesPerView配合使用
+//        centeredSlides: true, //多个slidesPerView时居中
+//        slidesPerColumn: 2, //设置多行
+//        scrollbar: '.swiper-scrollbar', //显示滚动条
+//        scrollbarHide: true,//隐藏滚动条
+//        grabCursor: true, //鼠标手状
+//        direction: 'vertical', //横版竖版
+//        freeMode: true, //不整块翻动
+//        paginationType: 'progress', //显示进度条
+//        autoHeight: true, //自适应图片高度
+
+
+//        paginationBulletRender: function (index, className) { //更改导航显示1
+//            return '<span class="' + className + '">' + (index + 1) + '</span>';
+//        },
+//        paginationType: 'fraction', //更改导航显示2
+
+
+//        动画效果
+//                 effect: 'fade', //1.渐变效果
+
+            effect: 'cube', //2.3D方块效果
+            cube: {
+                shadow: false,  //3D方块显示阴影
+                slideShadows: false,
+                shadowOffset: 20, //3D方块阴影距底部距离
+                shadowScale: 0.9
+            },
+
+            // effect: 'flip', //3.3D翻转效果
+            //
+            // effect: 'coverflow', //4.3D覆盖流,设置centeredSlides显示第一个
+            // coverflow: {
+            //     rotate: 50,
+            //     stretch: 0,
+            //     depth: 100,
+            //     modifier: 1,
+            //     slideShadows : true
+            // },
+
+        });
+    });
+
+
+</script>
+

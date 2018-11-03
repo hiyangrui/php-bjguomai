@@ -1,0 +1,74 @@
+{include file='common/header'}
+{include file='common/menu'}
+
+<!-- Page Content -->
+<div class="page-content">
+    <!-- Page Breadcrumb -->
+    <div class="page-breadcrumbs">
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">系统</a>
+            </li>
+            <li class="active">管理员列表</li>
+        </ul>
+    </div>
+    <!-- /Page Breadcrumb -->
+
+    <!-- Page Body -->
+    <div class="page-body">
+
+        <button type="button" tooltip="添加管理员" class="btn btn-sm btn-azure btn-addon"
+                onClick="javascript:window.location.href = '{:url(\'admin/add\')}'"><i class="fa fa-plus"></i> Add
+        </button>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="widget">
+                    <div class="widget-body">
+                        <div class="flip-scroll">
+                            <table class="table table-bordered table-hover">
+                                <thead class="">
+                                <tr>
+                                    <th class="text-center" style="width: 20%">ID</th>
+                                    <th class="text-center" style="width: 25%">管理员名称</th>
+                                    <th class="text-center" style="width: 25%">所属群组</th>
+                                    <th class="text-center" style="width: 30%">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {volist name="admins" id="admin"}
+                                <tr>
+                                    <td align="center">{$admin.id}</td>
+                                    <td align="center">{$admin.username}</td>
+                                    <td align="center">{$admin.groupTitle}</td>
+                                    <td align="center">
+                                        <a href="{:url('admin/edit', array('id'=>$admin['id']))}" class="btn btn-primary btn-sm shiny">
+                                            <i class="fa fa-edit"></i> 编辑
+                                        </a>
+                                        {if condition="$admin['id'] neq 1"}
+                                        <a href="#" onClick="warning('确实要删除该管理员吗', '{:url(\'admin/del\', array(\'id\'=>$admin[\'id\']))}')"
+                                           class="btn btn-danger btn-sm shiny">
+                                            <i class="fa fa-trash-o"></i> 删除
+                                        </a>
+                                        {/if}
+                                    </td>
+                                </tr>
+                                {/volist}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="margin-top: 10px; text-align: right">
+                            {$admins->render()}
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /Page Body -->
+</div>
+<!-- /Page Content -->
+
+{include file='common/footer'}

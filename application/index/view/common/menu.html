@@ -1,0 +1,59 @@
+<div id="header_wrap">
+    <div id="header">
+        <div style="float: left; width: 310px;">
+            <h1>
+                <a href="/" title=""></a>
+                <div class="" id="logo-sub-class"></div>
+            </h1>
+        </div>
+        <div id="navi">
+            <ul id="jsddm">
+                <li><a class="navi_home" href="__SITE_URL__">首页</a></li>
+                {volist name="cates" id="cate"}
+                <li>
+                    <a {if condition="$cate.children neq 0" }class="havechild" style="margin-right: 10px;" {/if}
+                        href="__SITE_URL__index/{if condition="$cate['type'] eq 1"}artlist/lis/cateid/{$cate.id}
+                        {elseif condition="$cate['type'] eq 2"}page/index/cateid/{$cate.id}
+                        {elseif condition="$cate['type'] eq 3"}imglist/lis/cateid/{$cate.id}{/if}">
+                        {$cate.catename}
+                    </a>
+                    {if condition="$cate['children'] neq 0"}
+                    <ul>
+                        <?php foreach($cate['children'] as $k=>$v){ ?>
+                        <li>
+                            <a href="__SITE_URL__index/{if condition=" $v['type'] eq 1"}artlist/lis/cateid/{$v.id}
+                                {elseif condition="$v['type'] eq 2"}page/index/cateid/{$v.id}
+                                {else condition="$v['type'] eq 3"}imglist/lis/cateid/{$v.id}{/if}">{$v.catename}
+                            </a>
+                        </li>
+                        <?php }?>
+                    </ul>
+                    {/if}
+                </li>
+                {/volist}
+            </ul>
+            <div style="clear: both;"></div>
+        </div>
+        <div style="float: right; width: 209px;">
+            <div class="widget" style="height: 30px; padding-top: 20px;">
+                <div style="float: left;">
+                    <form name="formsearch" action="{:url('search/index')}" method="get">
+                        <input type="hidden" name="" value="0"/>
+                        <input name="keywords" type="text" required="required" style="background-color: #000000;padding-left: 10px; font-size: 12px;font-family: 'Microsoft Yahei'; color: #999999;height: 29px; width: 160px; border: solid 1px #666666; line-height: 28px;" id="go" placeholder="输入搜索内容"/>
+                    </form>
+                </div>
+                <div style="float: left;">
+                    <img src="__INDEX__/images/search-new.png" id="imgSearch" style="cursor: pointer; margin: 0px;
+                        padding: 0px;" onclick="subForm()"/></div>
+                <div style="clear: both;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function subForm() {
+        formsearch.submit();
+    }
+</script>
