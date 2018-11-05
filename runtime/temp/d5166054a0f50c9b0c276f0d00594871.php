@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"E:\GitHub\bjguomai\public/../application/index\view\index\index.html";i:1541423697;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"E:\GitHub\bjguomai\public/../application/index\view\index\index.html";i:1541429770;}*/ ?>
 <!DOCTYPE HTML>
 <!--[if IE 7 ]>
 <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
@@ -62,7 +62,7 @@
                 <ul class="nav navbar-nav" id="mainNav">
                     <li class="active"><a href="#home" class="scroll-link">首页</a></li>
                     <li><a href="#enterpriseProfile" class="scroll-link">企业简介</a></li>
-                    <!--<li><a href="#services" class="scroll-link">经营范围</a></li>-->
+                 
                     <li><a href="#portfolio" class="scroll-link">解决方案</a></li>
                     <li><a href="#team" class="scroll-link">教学仪器</a></li>
                     <li><a href="#recruitment" class="scroll-link">招贤纳士</a></li>
@@ -213,7 +213,7 @@
 
 
 <section id="portfolio" class="page-section section appear clearfix">
-    <div class="center text-center">
+    <div class="container">
         <div class="heading text-center">
             <!-- Heading -->
             <h2>解决方案</h2>
@@ -259,143 +259,14 @@
     <div class="container">
         <div class="heading text-center">
             <h2>实验教学仪器</h2>
-            <!--&lt;!&ndash;<p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>&ndash;&gt;-->
-
-        <!-- Team Member's Details -->
-
-        <!--<div id="meet-the-team" class="row">-->
-            <!--<div class="col-md-3 col-xs-6">-->
-                <!--<div class="center text-center">-->
-                    <!--<p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/9.jpg"-->
-                            <!--alt=""></p>-->
-                    <!--<h5>共振波谱仪-->
-                        <!--<small class="designation muted"></small>-->
-                    <!--</h5>-->
-                    <!--<a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a-->
-                        <!--class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a-->
-                        <!--class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a-->
-                        <!--class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-md-3 col-xs-6">-->
-                <!--<div class="center text-center">-->
-                    <!--<p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/10.jpg"-->
-                            <!--alt=""></p>-->
-                    <!--<h5>电子显微镜-->
-                        <!--<small class="designation muted"></small>-->
-                    <!--</h5>-->
-                    <!--<a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a-->
-                        <!--class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a-->
-                        <!--class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a-->
-                        <!--class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-md-3 col-xs-6">-->
-                <!--<div class="center text-center">-->
-                    <!--<p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/11.jpg"-->
-                            <!--alt=""></p>-->
-                    <!--<h5>相差显微镜-->
-                        <!--<small class="designation muted"></small>-->
-                    <!--</h5>-->
-                    <!--<a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a-->
-                        <!--class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a-->
-                        <!--class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a-->
-                        <!--class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-md-3 col-xs-6">-->
-                <!--<div class="center text-center">-->
-                    <!--<p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/12.jpg"-->
-                            <!--alt=""></p>-->
-                    <!--<h5>荧光显微镜-->
-                        <!--<small class="designation muted"></small>-->
-                    <!--</h5>-->
-                    <!--<a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a-->
-                        <!--class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a-->
-                        <!--class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a-->
-                        <!--class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-
-
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/13.jpg" alt="">
-                </p>
-                <h5>涡度协方差仪
-                    <small class="designation muted"></small>
-                </h5>
-                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/9.jpg" alt="">
-                </p>
-                <h5>共振波谱仪
-                    <small class="designation muted"></small>
-                </h5>
-                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/10.jpg" alt="">
-                </p>
-                <h5>电子显微镜
-                    <small class="designation muted"></small>
-                </h5>
-                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/11.jpg" alt="">
-                </p>
-                <h5>相差显微镜
-                    <small class="designation muted"></small>
-                </h5>
-                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/12.jpg" alt="">
-                </p>
-                <h5>荧光显微镜
-                    <small class="designation muted"></small>
-                </h5>
-                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
+           <div class="col-md-3 col-xs-6">
             <div class="center text-center">
                 <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/1.jpg" alt="">
                 </p>
-                <h5>电子显微镜
+                <h5>离心机
                     <small class="designation muted"></small>
                 </h5>
-
+                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
                 <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
                     class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
                     class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
@@ -406,10 +277,10 @@
             <div class="center text-center">
                 <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/2.jpg" alt="">
                 </p>
-                <h5>电子显微镜
+                <h5>色谱仪
                     <small class="designation muted"></small>
                 </h5>
-
+                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
                 <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
                     class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
                     class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
@@ -420,10 +291,10 @@
             <div class="center text-center">
                 <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/3.jpg" alt="">
                 </p>
-                <h5>电子显微镜
+                <h5>吸附仪
                     <small class="designation muted"></small>
                 </h5>
-
+                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
                 <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
                     class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
                     class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
@@ -434,10 +305,10 @@
             <div class="center text-center">
                 <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/4.jpg" alt="">
                 </p>
-                <h5>电子显微镜
+                <h5>质谱仪
                     <small class="designation muted"></small>
                 </h5>
-
+                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
                 <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
                     class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
                     class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
@@ -448,10 +319,10 @@
             <div class="center text-center">
                 <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/5.jpg" alt="">
                 </p>
-                <h5>电子显微镜
+                <h5>热分析仪
                     <small class="designation muted"></small>
                 </h5>
-
+                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
                 <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
                     class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
                     class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
@@ -462,7 +333,7 @@
             <div class="center text-center">
                 <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/6.jpg" alt="">
                 </p>
-                <h5>电子显微镜
+                <h5>光谱仪
                     <small class="designation muted"></small>
                 </h5>
 
@@ -476,6 +347,48 @@
             <div class="center text-center">
                 <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/7.jpg" alt="">
                 </p>
+                <h5>衍射仪
+                    <small class="designation muted"></small>
+                </h5>
+
+                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <div class="center text-center">
+                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/8.jpg" alt="">
+                </p>
+                <h5>扫描电镜
+                    <small class="designation muted"></small>
+                </h5>
+
+                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <div class="center text-center">
+                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/9.jpg" alt="">
+                </p>
+                <h5>共振波谱仪
+                    <small class="designation muted"></small>
+                </h5>
+
+                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <div class="center text-center">
+                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/10.jpg" alt="">
+                </p>
                 <h5>电子显微镜
                     <small class="designation muted"></small>
                 </h5>
@@ -486,6 +399,62 @@
                     class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
             </div>
         </div>
+        <div class="col-md-3 col-xs-6">
+            <div class="center text-center">
+                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/11.jpg" alt="">
+                </p>
+                <h5>相差显微镜
+                    <small class="designation muted"></small>
+                </h5>
+
+                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <div class="center text-center">
+                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/12.jpg" alt="">
+                </p>
+                <h5>荧光显微镜
+                    <small class="designation muted"></small>
+                </h5>
+
+                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+            </div>
+        </div>
+            <!--<div class="col-md-3 col-xs-6">-->
+                <!--<div class="center text-center">-->
+                    <!--<p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/13.jpg" alt="">-->
+                    <!--</p>-->
+                    <!--<h5>涡度协方差仪-->
+                        <!--<small class="designation muted"></small>-->
+                    <!--</h5>-->
+
+                    <!--<a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a-->
+                        <!--class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a-->
+                        <!--class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a-->
+                        <!--class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-3 col-xs-6">-->
+                <!--<div class="center text-center">-->
+                    <!--<p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/14.jpg" alt="">-->
+                    <!--</p>-->
+                    <!--<h5>气质联用仪-->
+                        <!--<small class="designation muted"></small>-->
+                    <!--</h5>-->
+
+                    <!--<a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a-->
+                        <!--class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a-->
+                        <!--class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a-->
+                        <!--class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
         <!--/.container-->
     </div>
@@ -497,6 +466,8 @@
             <h2 style=" color: #1371AF;">招贤纳士</h2>
             <p>底薪+提成+餐补+交通补助+年终奖+五险一金+十天的带薪病假+春节十六天休假等各项福利保障。<br>
                 我们为员工提供良好的发展平台，温馨如家的工作氛围，真诚期待您的加入！<br>
+				如果感兴趣，请把简历发送至发送至hr@bjguomai.com。<br>
+				
             </p>
         </div>
         <div class="recruitment-item">
@@ -762,10 +733,9 @@
                 <div class="col-sm-12" style="color: #858585; position: relative;">
                     <ul class="socialIcons"
                         style="width:auto;height:100px;margin-bottom: 50px;margin-top:30px;float: right;margin-right: 20%">
-                        <li>联系方式：1888888888</li>
-                        <li>QQ：12345</li>
-                        <li>Email：123123123@123.com</li>
-                        <li>公司地址：北京市昌平区回龙观街道龙域北街金域国际中心A座1805</li>
+                        <li>联系方式：010-62991940</li>
+                        <li>企业邮箱：service@bjguomai.com</li>
+                        <li>公司地址：北京市昌平区回龙观街道龙域北街金域国际中心A座18层</li>
                     </ul>
                     <!--<div style="clear: both;margin-top: 80px;text-align: center">Copyright © 2016.国脉科技 版权所有 保留一切权利</div>-->
                     <!--<div style="position: absolute;top:30px; right: 2%;width: 200px">

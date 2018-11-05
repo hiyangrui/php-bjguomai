@@ -376,7 +376,7 @@ a {
     ---------------------------------------------------*/
 .team-member {
     margin-bottom: 15px;
-    background: gainsboro;
+    /*background: gainsboro;*/
 }
 
     .team-member .designation {
