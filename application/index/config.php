@@ -15,6 +15,6 @@ return [
         '__STATIC__'=>'/static/',
         '__LOCALHOST__'=>'http://127.0.0.1',
         '__SITE_URL__'=>SITE_URL,
-        '__BLOG__' => '/blog/'
+        '__BLOG__' => '/bjguomai/'
     ]
 ];

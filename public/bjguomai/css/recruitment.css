@@ -1,0 +1,80 @@
+.recruitment-item{
+    position: relative;
+    width:1000px;
+    height:500px;
+    margin:50px auto;
+    overflow: hidden;
+    zoom:1;
+}
+.recruitment-item ul{
+    height:500px;
+}
+.recruitment-item li{
+    position: relative;
+    overflow: hidden;
+    zoom:1;
+    float:left;
+    width:60px;
+    margin-right: 5px;
+    height:500px;
+}
+.recruitment-information{
+    margin-left: 50px;
+    margin-right: 40px;
+    font-variant: small-caps;
+}
+.recruitment-item .num{
+    cursor:pointer;
+    position: absolute;
+    border-radius:5px;
+    left:0;
+    top:0;
+    width:60px;
+    height:500px;
+    word-wrap: break-word;
+    text-align: center;
+    color:#8a8a8a;
+    background-color:#e5e5e5;
+}
+.num h1{
+    font-size: 20px;
+    font-weight: 500;
+    font-variant: small-caps;
+    width:20px;
+    line-height: 1.1;
+    margin:80px auto 0;
+    letter-spacing: 0;
+}
+.num h1 span{
+    font-size: 24px;
+}
+
+.recruitment-item .current {
+    background:#1371AF;
+}
+.current h1{
+    color:#fff;
+}
+.description{
+    position: absolute;
+    left:60px;
+    top:0;
+    width:810px;
+    height:500px;
+    color:#000;
+    background: #eeeeee;
+}
+.description h2{
+    margin:40px 0 40px 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+.description p{
+    margin:0 10px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.description{
+    display: block;
+}

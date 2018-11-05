@@ -53,7 +53,7 @@ class Article extends Model
 
     //获取所有文章
     public function getAllAllArticles() {
-        $artLis = db('article')->where('status', '1')->order('sort desc')->limit(8)->select();
+        $artLis = db('article')->where('status', '1')->order('sort desc')->limit(16)->select();
         //dump(123);die;
         return $artLis;
     }

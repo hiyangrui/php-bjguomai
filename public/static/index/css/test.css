@@ -1,0 +1,78 @@
+.qc-grids.with-slot .partner-product-block.pt-unit-active {
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 0;
+    height: 478px;
+}
+.qc-grids.with-slot [class*="qc-unit"] {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.partner-product-block.pt-unit-active {
+    border-top: 4px solid #00a4ff;
+    margin-top: -30px;
+    border-left: 1px solid #00a4ff;
+    border-right: 1px solid #00a4ff;
+    border-bottom: 1px solid #00a4ff;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 0 3px 20px rgba(0,0,0,.1);
+    box-shadow: 0 3px 20px rgba(0,0,0,.1);
+    -webkit-transform: translate3d(0,-2px,0);
+    transform: translate3d(0,-2px,0);
+}
+.partner-product-wrap .pt-unit-active {
+    width: 40%;
+}
+
+.partner-product-wrap .pt-unit-active {
+    width: 40%;
+}
+.qc-grids [class*="qc-unit"] {
+    display: inline-block;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.partner-product-block {
+    background-color: #fff;
+    border-top: 4px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 40px;
+    position: relative;
+    height: 400px;
+    transition: all .3s cubic-bezier(.4,0,.2,1),z-index 0s .12s;
+    min-height: 0;
+    overflow: hidden;
+}
+.qc-unit-1-5 {
+    width: 20%;
+}
+body, button, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, hr, input, li, ol, p, td, textarea, th, ul {
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+.qc-grids {
+    font-size: 0;
+}
+html {
+    font-family: 'pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+    font-size: 14px;
+}
+body, button, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, hr, input, li, ol, p, td, textarea, th, ul {
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
