@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"E:\GitHub\bjguomai\public/../application/index\view\index\index.html";i:1541429770;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"E:\GitHub\bjguomai\public/../application/index\view\index\index.html";i:1545360974;}*/ ?>
 <!DOCTYPE HTML>
 <!--[if IE 7 ]>
 <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
@@ -32,6 +32,7 @@
     <link rel="bookmark" type="image/x-icon" href="/bjguomai//images/favicon.ico"/>
     <link rel="shortcut icon" href="/bjguomai//images/favicon.ico">
     <link rel="icon" href="/bjguomai//images/favicon.ico">
+
     <!-- Font Awesome -->
     <link href="/bjguomai//font/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/bjguomai//css/lrtk.css" type="text/css"/><!--解决方案样式-->
@@ -44,7 +45,7 @@
 
 <body>
 <header class="header">
-    <div class="container">
+
         <nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
                 <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
@@ -54,25 +55,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand scroll-top logo"><img src="/bjguomai//images/logo.png"
-                                                                      alt="bjguomai"/></a>
+                <a href="#" class="navbar-brand scroll-top logo"><img src="/bjguomai//images/logo.png"alt="bjguomai"/></a>
             </div>
-            <!--/.navbar-header-->
             <div id="main-nav" class="collapse navbar-collapse" style="background: white">
                 <ul class="nav navbar-nav" id="mainNav">
                     <li class="active"><a href="#home" class="scroll-link">首页</a></li>
                     <li><a href="#enterpriseProfile" class="scroll-link">企业简介</a></li>
-                 
+
                     <li><a href="#portfolio" class="scroll-link">解决方案</a></li>
-                    <li><a href="#team" class="scroll-link">教学仪器</a></li>
+                    <!--<li><a href="#team" class="scroll-link">教学仪器</a></li>-->
                     <li><a href="#recruitment" class="scroll-link">招贤纳士</a></li>
                     <li><a href="#partner" class="scroll-link">合作伙伴</a></li>
                     <li><a href="#contactUs" class="scroll-link">联系我们</a></li>
                 </ul>
             </div>
-            <!--/.navbar-collapse-->
         </nav>
-        <!--/.navbar-->
     </div>
     <!--/.container-->
 </header>
@@ -83,7 +80,7 @@
         <div class="container banner-content">
             <div id="da-slider" class="da-slider">
                 <div class="da-slide">
-                    <h2>国脉科技</h2>
+                    <h2 >国脉科技</h2>
                     <p>服务客户，成就员工；诚信敬业，创新共赢</p>
                     <!--a href="#" class="da-link button-outline">了解更多</a-->
                     <div class="da-img"></div>
@@ -109,14 +106,23 @@
         <div class="heading text-left">
             <!-- Heading -->
             <h2 class="heading text-center">国脉科技</h2>
-            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国脉（北京）科技有限公司（简称：国脉科技）成立于2011年3月，注册资金5000万元；是一家提供信息化整体解决方案的高科技集成服务商。
+            <p style="width:100%;text-align : left;
+                /*height:405px;*/
+                font-size:20px;
+                font-family:STHeitiSC-Medium;
+                font-weight:500;
+                color:rgba(62,62,62,1);
+                line-height:35px;
+                opacity:0.8;
+
+                "> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国脉（北京）科技有限公司（简称：国脉科技）成立于2011年3月，注册资金5000万元；是一家提供信息化整体解决方案的高科技集成服务商。
                 自成立伊始，国脉科技秉承“服务源于科技，科技改变未来”的发展理念，运用云计算、物联网、虚拟仿真、大数据等新技术和新理念，致力于为客户提供规划咨询、硬件配套、软件开发、专业建设、系统集成的信息化整体解决方案。
-            </p><br/>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;短短数年，国脉科技汇聚了一批优秀的行业精英，积累了丰富的行业经验和项目管理经验，已在全国多所学校和政府、医疗、科研等单位建立成功案
+            <br/><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;短短数年，国脉科技汇聚了一批优秀的行业精英，积累了丰富的行业经验和项目管理经验，已在全国多所学校和政府、医疗、科研等单位建立成功案
                 例。并与Huawei、H3C、IBM、DELL、浪潮、EMC、VMware、Radware等国内外知名厂商建立了战略合作伙伴关系，已连续多年成为中央政府采购、北京
                 政府采购定点协议供货商。
-            </p><br/>
-            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国脉科技秉承
+            <br/><br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国脉科技秉承
                 “服务客户，成就员工；诚信敬业，创新共赢”的经营理念，以“提供专业IT服务”为己任，运用现代化的管理模式，以最先进的产
                 品和科技为基础，以敬业精神与品牌服务为支撑，为广大用户提供最优秀的产品和最完善的服务。<br/>
             </p>
@@ -124,100 +130,20 @@
     </div>
 </section>
 
-
-<!--<section id="services" class="page-section darkBg">-->
-    <!--<div class="container">-->
-        <!--<div class="row">-->
-            <!--<div class="col-md-12">-->
-                <!--<div class="heading text-left">-->
-                    <!--&lt;!&ndash; Heading &ndash;&gt;-->
-                    <!--<h2 class="heading text-center">经营范围</h2>-->
-                    <!--<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国脉科技秉承 “服务客户，成就员工；诚信敬业，创新共赢”的经营理念，-->
-                        <!--以“提供专业IT服务”为己任，运用现代化的管理模式，以最先进的产品和科技为基础，以敬业精神与品牌服务为支撑，为广大用户提供最优秀的产品和最完善的服务</p>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="row">-->
-            <!--<div class="col-md-4 col-sm-6">-->
-                <!--<div class="media">-->
-                    <!--<div class="pull-left">-->
-                        <!--<i class="fa fa-cloud color fa-5x"></i>-->
-                    <!--</div>-->
-                    <!--<div class="media-body">-->
-                        <!--<h3 class="media-heading">技术研发</h3>-->
-                        <!--<p>技术开发、转移、咨询、计算机维修</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>&lt;!&ndash;/.col-md-4&ndash;&gt;-->
-            <!--<div class="col-md-4 col-sm-6">-->
-                <!--<div class="media">-->
-                    <!--<div class="pull-left">-->
-                        <!--<i class="fa fa-cloud color fa-5x"></i>-->
-                    <!--</div>-->
-                    <!--<div class="media-body">-->
-                        <!--<h3 class="media-heading">解决方案</h3>-->
-                        <!--<p>为客户提供规划咨询、硬件配套、软件开发、专业建设、系统集成的信息化整体解决方案</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>&lt;!&ndash;/.col-md-4&ndash;&gt;-->
-            <!--<div class="col-md-4 col-sm-6">-->
-                <!--<div class="media">-->
-                    <!--<div class="pull-left">-->
-                        <!--<i class="fa fa-cloud color fa-5x"></i>-->
-                    <!--</div>-->
-                    <!--<div class="media-body">-->
-                        <!--<h3 class="media-heading">动画设计</h3>-->
-                        <!--<p>电脑动画设计</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>&lt;!&ndash;/.col-md-4&ndash;&gt;-->
-        <!--</div>&lt;!&ndash;/.row&ndash;&gt;-->
-        <!--<div class="gap"></div>-->
-        <!--<div class="row">-->
-            <!--<div class="col-md-4 col-sm-6">-->
-                <!--<div class="media">-->
-                    <!--<div class="pull-left">-->
-                        <!--<i class="fa fa-cloud color fa-5x"></i>-->
-                    <!--</div>-->
-                    <!--<div class="media-body">-->
-                        <!--<h3 class="media-heading">销售设备</h3>-->
-                        <!--<p>销售计算机、软件及辅助设备、通讯设备、电子产品、元件、器件</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>&lt;!&ndash;/.col-md-4&ndash;&gt;-->
-            <!--<div class="col-md-4 col-sm-6">-->
-                <!--<div class="media">-->
-                    <!--<div class="pull-left">-->
-                        <!--<i class="fa fa-cloud color fa-5x"></i>-->
-                    <!--</div>-->
-                    <!--<div class="media-body">-->
-                        <!--<h3 class="media-heading">销售产品</h3>-->
-                        <!--<p>销售办公用文具、礼品、工艺品、第二、三类医疗器械</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>&lt;!&ndash;/.col-md-4&ndash;&gt;-->
-            <!--<div class="col-md-4 col-sm-6">-->
-                <!--<div class="media">-->
-                    <!--<div class="pull-left">-->
-                        <!--<i class="fa fa-cloud color fa-5x"></i>-->
-                    <!--</div>-->
-                    <!--<div class="media-body">-->
-                        <!--<h3 class="media-heading">企业策划</h3>-->
-                        <!--<p>组织文化艺术交流活动（不含演出及棋牌娱乐）、承办展览展示活动、会议活动</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>&lt;!&ndash;/.col-md-4&ndash;&gt;-->
-        <!--</div>&lt;!&ndash;/.row&ndash;&gt;-->
-    <!--</div>&lt;!&ndash;/.container&ndash;&gt;-->
-<!--</section>-->
-
-
 <section id="portfolio" class="page-section section appear clearfix">
     <div class="container">
         <div class="heading text-center">
             <!-- Heading -->
             <h2>解决方案</h2>
-            <p>
+            <p style="width:100%;text-align : left;
+                        height:100%;
+                        font-size:20px;
+                        font-family:STHeitiSC-Medium;
+                        font-weight:500;
+                        color:rgba(62,62,62,1);
+                        line-height:35px;
+                        opacity:0.8;
+">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《国家中长期教育改革和发展规划纲要（2010-2020年）》指出“信息技术对教育发展具有革命性影响，
                 必须予以高度重视”。
                 2012年3月教育部《教育信息化十年发展规划（2011-2020年）》提出目标：到2020年，全面完成《教育规划纲要》所提出的教育信息化目标任务，
@@ -225,32 +151,33 @@
                 撑服务体系，基本实现所有地区和各级各类学校宽带网络的全面覆盖，
                 教育管理信息化水平显著提高，信息技术与教育融合发展的水平显著提升。教育信息化整体上接近国际先进水平，对教育改革和发展的支撑与引领作用充分显现。</p>
         </div>
+        <h3 style="margin:40px auto;width:200px;height:20px;font-size:18px;font-family:STHeitiSC-Medium;font-weight:500;color:rgba(62,62,62,1);line-height:18px;">教育信息系统解决方案</h3>
         <div class="solution">
-            <ul>
-
-                <li id="content">
-
-                    <?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($i % 2 );++$i;?>
-                <li class="listbox mr20">
-                    <div class="listimg">
-                        <a href="<?php echo url('article/article', array('artid'=>$article['id'])); ?>" title="" target="_blank">
-                            <img src="<?php echo $article['thumb']; ?>" class="attachment-thumbnail wp-post-image" alt=""/></a>
-                        <div class="summary">
-                            <div class="summarytxt">
-                                <p class="content"><?php echo $article['desc']; ?></p>
+            <div class = "row">
+                <div>
+                    <ul>
+                        <li id="content">
+                            <?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($i % 2 );++$i;?>
+                        <li class="listbox mr20">
+                            <div class="listimg">
+                                <a href="<?php echo url('article/article', array('artid'=>$article['id'])); ?>" title="" target="_blank">
+                                    <img src="<?php echo $article['thumb']; ?>" class="attachment-thumbnail wp-post-image" alt=""/></a>
+                                <div class="summary">
+                                    <div class="summarytxt">
+                                        <p class="content"><?php echo $article['desc']; ?></p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="listinfo">
-                        <div class="listtitle"><a href="http://www.lanrentuku.com/" title="" target="_blank"><?php echo $article['title']; ?></a>
-                        </div>
-                    </div>
-                </li>
-
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-                </li>
-
-            </ul>
+                            <div class="listinfo">
+                                <div class="listtitle"><a href="http://www.lanrentuku.com/" title="" target="_blank"><?php echo $article['title']; ?></a>
+                                </div>
+                            </div>
+                        </li>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -258,203 +185,176 @@
 <section id="team" class="page-section team-member">
     <div class="container">
         <div class="heading text-center">
-            <h2>实验教学仪器</h2>
-           <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/1.jpg" alt="">
-                </p>
-                <h5>离心机
-                    <small class="designation muted"></small>
-                </h5>
-                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+            <h2>教学仪器</h2>
+            <div class="col-md-3 col-xs-6">
+                <div class="center text-center">
+                    <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/1.jpg" alt="">
+                    </p>
+                    <h5>离心机
+                        <small class="designation muted"></small>
+                    </h5>
+                    <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
+                    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                        class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                        class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                        class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/2.jpg" alt="">
-                </p>
-                <h5>色谱仪
-                    <small class="designation muted"></small>
-                </h5>
-                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+            <div class="col-md-3 col-xs-6">
+                <div class="center text-center">
+                    <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/2.jpg" alt="">
+                    </p>
+                    <h5>色谱仪
+                        <small class="designation muted"></small>
+                    </h5>
+                    <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
+                    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                        class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                        class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                        class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/3.jpg" alt="">
-                </p>
-                <h5>吸附仪
-                    <small class="designation muted"></small>
-                </h5>
-                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+            <div class="col-md-3 col-xs-6">
+                <div class="center text-center">
+                    <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/3.jpg" alt="">
+                    </p>
+                    <h5>吸附仪
+                        <small class="designation muted"></small>
+                    </h5>
+                    <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
+                    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                        class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                        class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                        class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/4.jpg" alt="">
-                </p>
-                <h5>质谱仪
-                    <small class="designation muted"></small>
-                </h5>
-                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+            <div class="col-md-3 col-xs-6">
+                <div class="center text-center">
+                    <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/4.jpg" alt="">
+                    </p>
+                    <h5>质谱仪
+                        <small class="designation muted"></small>
+                    </h5>
+                    <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
+                    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                        class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                        class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                        class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/5.jpg" alt="">
-                </p>
-                <h5>热分析仪
-                    <small class="designation muted"></small>
-                </h5>
-                <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+            <div class="col-md-3 col-xs-6">
+                <div class="center text-center">
+                    <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/5.jpg" alt="">
+                    </p>
+                    <h5>热分析仪
+                        <small class="designation muted"></small>
+                    </h5>
+                    <!--<p>lorem Ipsum available, but the majority have suffered alteration.</p>-->
+                    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                        class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                        class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                        class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/6.jpg" alt="">
-                </p>
-                <h5>光谱仪
-                    <small class="designation muted"></small>
-                </h5>
+            <div class="col-md-3 col-xs-6">
+                <div class="center text-center">
+                    <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/6.jpg" alt="">
+                    </p>
+                    <h5>光谱仪
+                        <small class="designation muted"></small>
+                    </h5>
 
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                        class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                        class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                        class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/7.jpg" alt="">
-                </p>
-                <h5>衍射仪
-                    <small class="designation muted"></small>
-                </h5>
+            <div class="col-md-3 col-xs-6">
+                <div class="center text-center">
+                    <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/7.jpg" alt="">
+                    </p>
+                    <h5>衍射仪
+                        <small class="designation muted"></small>
+                    </h5>
 
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                        class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                        class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                        class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/8.jpg" alt="">
-                </p>
-                <h5>扫描电镜
-                    <small class="designation muted"></small>
-                </h5>
+            <div class="col-md-3 col-xs-6">
+                <div class="center text-center">
+                    <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/8.jpg" alt="">
+                    </p>
+                    <h5>扫描电镜
+                        <small class="designation muted"></small>
+                    </h5>
 
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                        class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                        class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                        class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/9.jpg" alt="">
-                </p>
-                <h5>共振波谱仪
-                    <small class="designation muted"></small>
-                </h5>
+            <div class="col-md-3 col-xs-6">
+                <div class="center text-center">
+                    <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/9.jpg" alt="">
+                    </p>
+                    <h5>共振波谱仪
+                        <small class="designation muted"></small>
+                    </h5>
 
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                        class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                        class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                        class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/10.jpg" alt="">
-                </p>
-                <h5>电子显微镜
-                    <small class="designation muted"></small>
-                </h5>
+            <div class="col-md-3 col-xs-6">
+                <div class="center text-center">
+                    <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/10.jpg" alt="">
+                    </p>
+                    <h5>电子显微镜
+                        <small class="designation muted"></small>
+                    </h5>
 
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                        class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                        class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                        class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/11.jpg" alt="">
-                </p>
-                <h5>相差显微镜
-                    <small class="designation muted"></small>
-                </h5>
+            <div class="col-md-3 col-xs-6">
+                <div class="center text-center">
+                    <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/11.jpg" alt="">
+                    </p>
+                    <h5>相差显微镜
+                        <small class="designation muted"></small>
+                    </h5>
 
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                        class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                        class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                        class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-            <div class="center text-center">
-                <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/12.jpg" alt="">
-                </p>
-                <h5>荧光显微镜
-                    <small class="designation muted"></small>
-                </h5>
+            <div class="col-md-3 col-xs-6">
+                <div class="center text-center">
+                    <p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/12.jpg" alt="">
+                    </p>
+                    <h5>荧光显微镜
+                        <small class="designation muted"></small>
+                    </h5>
 
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
-                    class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
-                    class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
-                    class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a
+                        class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a
+                        class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a
+                        class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
+                </div>
             </div>
-        </div>
-            <!--<div class="col-md-3 col-xs-6">-->
-                <!--<div class="center text-center">-->
-                    <!--<p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/13.jpg" alt="">-->
-                    <!--</p>-->
-                    <!--<h5>涡度协方差仪-->
-                        <!--<small class="designation muted"></small>-->
-                    <!--</h5>-->
 
-                    <!--<a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a-->
-                        <!--class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a-->
-                        <!--class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a-->
-                        <!--class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-md-3 col-xs-6">-->
-                <!--<div class="center text-center">-->
-                    <!--<p><img class="img-responsive img-thumbnail img-circle" src="/bjguomai//images/Instrument/14.jpg" alt="">-->
-                    <!--</p>-->
-                    <!--<h5>气质联用仪-->
-                        <!--<small class="designation muted"></small>-->
-                    <!--</h5>-->
-
-                    <!--<a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a-->
-                        <!--class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a-->
-                        <!--class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a-->
-                        <!--class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
         </div>
         <!--/.container-->
     </div>
@@ -463,8 +363,14 @@
     <div class="container">
         <div class="heading text-center">
             <!-- Heading -->
-            <h2 style=" color: #1371AF;">招贤纳士</h2>
-            <p>底薪+提成+餐补+交通补助+年终奖+五险一金+十天的带薪病假+春节十六天休假等各项福利保障。<br>
+            <h2 style="width:126px;height:30px;font-size:31px; font-family:STHeitiSC-Medium;font-weight:500;color:rgba(16,16,16,1);
+        opacity:0.8;
+        text-align:center;margin:80px auto;
+        ">招贤纳士</h2>
+            <p style="width:100%;height:100%;font-size:20px;font-family:STHeitiSC-Medium;font-weight:500;color:rgba(62,62,62,1);
+                        line-height:35px;
+                        opacity:0.8;
+">底薪+提成+餐补+交通补助+年终奖+五险一金+十天的带薪病假+春节十六天休假等各项福利保障。<br>
                 我们为员工提供良好的发展平台，温馨如家的工作氛围，真诚期待您的加入！<br>
 				如果感兴趣，请把简历发送至发送至hr@bjguomai.com。<br>
 				
@@ -758,7 +664,7 @@
                         <li><a href="#" class="googleIcon" target="_blank"><i class="fa fa-google-plus-square fa-lg""></i></a></li>
                         <li><a href="#" class="pinterest" target="_blank"><i class="fa fa-pinterest-square fa-lg""></i></a></li>
                     </ul>-->
-                    <div style="clear: both;margin-top: 10px;text-align: center">Copyright © 2016.国脉科技 版权所有 保留一切权利</div>
+                    <div style="clear: both;margin-top: 10px;text-align: center">Copyright © 2018.国脉科技 版权所有 保留一切权利</div>
                 </div>
             </div>  <!-- / .row -->
         </div>

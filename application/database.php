@@ -20,7 +20,7 @@ return [
     'username'        => 'root',
     // 密码
 //    'password'        => 'wojiushiwo201314',
-    'password'        => 'root',
+    'password'        => '741100',
     // 端口
     'hostport'        => '',
     // 连接dsn

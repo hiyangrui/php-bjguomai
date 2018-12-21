@@ -5,6 +5,7 @@
 a{font-family:Tahoma,Helvetica,Arial,sans-serif; font-size:14px; color:#666; text-decoration:none; outline:none;}
 
 img,.searchtxt,.searchbtn,.pinglun input.submit{border:0;}
+/*img:hover{transform: scale(1.5);}*/
 
 ol,ul,li{list-style:none;}
 
@@ -22,7 +23,9 @@ html,body,form,p,div,h1,h2,h3,h4,h5,h6{-webkit-text-size-adjust:none; font-weigh
 
 .summary{background:#333;}
 
-.listbox{float:left; margin-bottom:20px; padding:10px; _padding:10px 10px 8px 10px ;background:#f6f6f6; width:260px; height:240px; position:relative;}
+.listbox{float:left; margin-bottom:20px;
+    /*padding:10px; _padding:10px 10px 8px 10px ;*/
+    background:#f6f6f6; width:260px; height:240px; position:relative;}
 
 .listimg{float:left; width:260px; height:165px; position:relative; overflow:hidden;}
 
