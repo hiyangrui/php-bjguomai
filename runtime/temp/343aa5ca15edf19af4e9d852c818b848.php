@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"E:\GitHub\bjguomai\public/../application/admin\view\article\lis.html";i:1531811520;s:60:"E:\GitHub\bjguomai\application\admin\view\common\header.html";i:1545389103;s:58:"E:\GitHub\bjguomai\application\admin\view\common\menu.html";i:1530534551;s:60:"E:\GitHub\bjguomai\application\admin\view\common\footer.html";i:1529459493;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:65:"E:\GitHub\bjguomai\public/../application/admin\view\cate\lis.html";i:1532144645;s:60:"E:\GitHub\bjguomai\application\admin\view\common\header.html";i:1545389103;s:58:"E:\GitHub\bjguomai\application\admin\view\common\menu.html";i:1530534551;s:60:"E:\GitHub\bjguomai\application\admin\view\common\footer.html";i:1529459493;}*/ ?>
 <!DOCTYPE html>
 <html><head>
     <meta charset="utf-8">
@@ -243,7 +243,7 @@
             <li>
                 <a href="#">系统</a>
             </li>
-            <li class="active">文章管理</li>
+            <li class="active">栏目列表</li>
         </ul>
     </div>
     <!-- /Page Breadcrumb -->
@@ -251,11 +251,8 @@
     <!-- Page Body -->
     <div class="page-body">
 
-        <button type="button" tooltip="添加文章" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url('article/add'); ?>'"> <i class="fa fa-plus"></i> Add
-        </button>
-        <button style="float: right" type="button" tooltip="全部文章" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url('article/lis'); ?>'"> 全部文章
-        </button>
-        <button style="float: right;margin-right: 15px" type="button" tooltip="筛选推荐位" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url('article/filterLis'); ?>'"> 筛选推荐位
+        <button type="button" tooltip="添加栏目" class="btn btn-sm btn-azure btn-addon"
+                onClick="javascript:window.location.href = '<?php echo url('cate/add'); ?>'"><i class="fa fa-plus"></i> Add
         </button>
         <div class="row">
             <div class="col-lg-12 col-sm-12 col-xs-12">
@@ -266,59 +263,46 @@
                             <table class="table table-bordered table-hover">
                                 <thead class="">
                                 <tr>
-                                    <th class="text-center" width="3%">ID</th>
-                                    <th class="text-center" width="3%">排序</th>
-                                    <th class="text-center" width="5%">文章标题</th>
-                                    <th class="text-center" width="3%">关键字</th>
-                                    <th class="text-center" width="3%">缩略图</th>
-                                    <th class="text-center" width="5%">描述</th>
-                                    <!--<th class="text-center" width="10%">文章内容</th>-->
-                                    <th class="text-center" width="3%">类别</th>
-                                    <th class="text-center" width="3%">是否发布</th>
-                                    <th class="text-center" width="3%">是否推荐</th>
-                                    <th class="text-center" width="3%">文章发布时间</th>
-                                    <th class="text-center" width="5%">操作</th>
+                                    <th class="text-center" style="width: 10%">ID</th>
+                                    <th class="text-center" style="width: 10%">排序</th>
+                                    <th class="text-center" style="width: 20%">栏目名称</th>
+                                    <th class="text-center" style="width: 20%">栏目类型</th>
+                                    <th class="text-center" style="width: 20%">是否推荐</th>
+                                    <th class="text-center" style="width: 20%">操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($i % 2 );++$i;?>
+                                <?php if(is_array($cates) || $cates instanceof \think\Collection || $cates instanceof \think\Paginator): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?>
                                 <tr>
-                                    <td align="center"><?php echo $article['id']; ?></td>
-                                    <td align="center"><input style="width: 50px; text-align: center" type="text" name="<?php echo $article['id']; ?>" value="<?php echo $article['sort']; ?>" required="required" maxlength="3"></td>
-                                    <td align="center"><?= mb_substr($article['title'], 0, 6, 'utf-8'); if(strlen($article['title'])>6) {echo '...';}; ?></td>
-                                    <td align="center"><?php echo $article['keywords']; ?></td>
+                                    <td align="center"><?php echo $cate['id']; ?></td>
+                                    <td align="center"><input style="width: 50px; text-align: center" type="text" name="<?php echo $cate['id']; ?>" value="<?php echo $cate['sort']; ?>" required="required" maxlength="3"></td>
+                                    <td align="left"><?php if($cate['level'] != 0): ?>|<?php endif; ?><?php echo str_repeat('---', $cate['level']) ?><?php echo $cate['catename']; ?></td>
                                     <td align="center">
-                                        <?php if($article['thumb'] == ''): ?>
-                                        无缩略图
+                                        <?php if($cate['type'] == 1): ?>
+                                        文章列表
+                                        <?php elseif($cate['type'] == 2): ?>
+                                        单页
                                         <?php else: ?>
-                                        <img src="http://www.bjguomai.com/<?php echo $article['thumb']; ?>" alt="" style="height: 30px">
+                                        图片列表
                                         <?php endif; ?>
                                     </td>
-                                    <!--<td align="center"><?= mb_substr($article['content'], 0, 20, 'utf-8'); if(strlen($article['content'])>20) {echo '...';}; ?></td>-->
-                                    <td align="center"><?= mb_substr($article['desc'], 0, 10, 'utf-8'); if(strlen($article['desc'])>20) {echo '...';}; ?></td>
-                                    <td align="center"><?php echo $article['catename']; ?></td>
                                     <td align="center">
-                                        <?php if($article['status'] == 1): ?>
+                                        <?php if($cate['recommend'] == 1): ?>
                                         是
                                         <?php else: ?>
                                         否
                                         <?php endif; ?>
                                     </td>
                                     <td align="center">
-                                        <?php if($article['recommend'] == 1): ?>
-                                        是
-                                        <?php else: ?>
-                                        否
-                                        <?php endif; ?>
-                                    </td>
-                                    <td align="center"><?= date('Y-m-d H:m:s', $article['time']) ?></td>
-                                    <td align="center">
-                                        <a href="<?php echo url('article/edit', array('id'=>$article['id'])); ?>" class="btn btn-primary btn-sm shiny">
+                                        <a href="<?php echo url('cate/edit', array('id'=>$cate['id'])); ?>" class="btn btn-primary btn-sm shiny">
                                             <i class="fa fa-edit"></i> 编辑
                                         </a>
-                                        <a href="#" onClick="warning('确实要删除吗', '<?php echo url('article/del', array('id'=>$article['id'])); ?>')" class="btn btn-danger btn-sm shiny">
+                                        <?php if(!($cate['id']==1 || $cate['id']==6 || $cate['id']==7)) {?>
+                                        <a href="#" onClick="warning('确实要删除该栏目吗', '<?php echo url('cate/del', array('id'=>$cate['id'])); ?>')"
+                                           class="btn btn-danger btn-sm shiny">
                                             <i class="fa fa-trash-o"></i> 删除
                                         </a>
+                                        <?php }?>
                                     </td>
                                 </tr>
                                 <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -327,9 +311,6 @@
                                 <div style="margin-top: 10px;float: left"><input type="submit" class="btn btn-primary" value="排序"></div>
                                 <div class="clear"></div>
                             </form>
-                        </div>
-                        <div style="margin-top: 10px; text-align: right">
-                            <?php echo $articles->render(); ?>
                         </div>
                     </div>
                 </div>

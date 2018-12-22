@@ -57,4 +57,23 @@ class Article extends Model
         //dump(123);die;
         return $artLis;
     }
+
+    //获取教育信息解决方案
+    public function getEduInfoSystem(){
+        $EduInfoSystem = db('article')->where('cateid', '4')->order('sort desc')->limit(16)->select();
+        return $EduInfoSystem;
+    }
+
+    //获取教育空间解决方案
+    public function getEduRoomSolution(){
+        $EduRoomSolution = db('article')->where('cateid', '5')->order('sort desc')->limit(16)->select();
+        return  $EduRoomSolution;
+    }
+
+    //获取教学实验仪器
+    public function getInstruments(){
+        $Instruments = db('article')->where('cateid', '2')->order('sort desc')->limit(16)->select();
+        return  $Instruments;
+    }
+
 }

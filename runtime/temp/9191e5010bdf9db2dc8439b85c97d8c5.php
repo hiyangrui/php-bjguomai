@@ -1,8 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"E:\GitHub\bjguomai\public/../application/admin\view\article\add.html";i:1531792624;s:60:"E:\GitHub\bjguomai\application\admin\view\common\header.html";i:1535716696;s:58:"E:\GitHub\bjguomai\application\admin\view\common\menu.html";i:1530534551;s:60:"E:\GitHub\bjguomai\application\admin\view\common\footer.html";i:1529459493;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"E:\GitHub\bjguomai\public/../application/admin\view\article\add.html";i:1531792624;s:60:"E:\GitHub\bjguomai\application\admin\view\common\header.html";i:1545389103;s:58:"E:\GitHub\bjguomai\application\admin\view\common\menu.html";i:1530534551;s:60:"E:\GitHub\bjguomai\application\admin\view\common\footer.html";i:1529459493;}*/ ?>
 <!DOCTYPE html>
 <html><head>
     <meta charset="utf-8">
-    <title>Echeverra</title>
+    <title>后台管理系统</title>
 
     <meta name="description" content="Dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,15 @@
     <link href="/static/admin//style/bootstrap.css" rel="stylesheet">
     <link href="/static/admin//style/font-awesome.css" rel="stylesheet">
     <link href="/static/admin//style/weather-icons.css" rel="stylesheet">
-    <link rel="shortcut icon" href="/static/admin//images/ts.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="___BLOG__/images/favicon.ico" type="image/x-icon" />
     <!--Beyond styles-->
     <link id="beyond-link" href="/static/admin//style/beyond.css" rel="stylesheet" type="text/css">
     <link href="/static/admin//style/demo.css" rel="stylesheet">
     <link href="/static/admin//style/typicons.css" rel="stylesheet">
     <link href="/static/admin//style/animate.css" rel="stylesheet">
+    <link rel="bookmark" type="image/x-icon" href="__BLOG__/images/favicon.ico"/>
+    <link rel="shortcut icon" href="__BLOG__/images/favicon.ico">
+    <link rel="icon" href="__BLOG__/images/favicon.ico">
     <style>
         .clear:after {
             content:"";
@@ -35,7 +38,7 @@
             <div class="navbar-header pull-left">
                 <a href="http://www.bjguomai.com//admin" class="navbar-brand">
                     <small>
-                        <img style="width: 150px;margin-left: 10px" src="/static/admin//images/logo.png" alt="">
+                        <img style="width: 130px;margin-left: 10px" src="/static/admin//images/logo.png" alt="">
                     </small>
                 </a>
             </div>

@@ -53,12 +53,12 @@ h3 {
     border-radius: 0px;
     font-size: 16px;
     font-weight: 400;
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .button-outline:hover {
     color: #fff;
-    background: rgba(255,255,255,0.35);
+    background: rgba(255, 255, 255, 0.35);
 }
 
 a {
@@ -128,6 +128,7 @@ a:hover {
     text-align: center;
     font-size: 3em;
 }
+
 /* Header
 ----------------------------------------------*/
 #main-nav {
@@ -171,6 +172,7 @@ a:hover {
 
 .navbar-toggle {
 }
+
 /*----Nav ----*/
 .header .navbar-brand {
     float: left;
@@ -243,18 +245,20 @@ a:hover {
 }
 
 .page-section h2 {
-    width:126px;
-    height:30px;
-    font-size:31px;
-    font-family:STHeitiSC-Medium;
-    font-weight:500;color: rgba(16,16,16,1);
-    opacity:0.8;
-    text-align:center;margin:80px auto;
+    width: 126px;
+    height: 30px;
+    font-size: 31px;
+    font-family: STHeitiSC-Medium;
+    font-weight: 500;
+    color: rgba(16, 16, 16, 1);
+    opacity: 0.8;
+    text-align: center;
+    margin: 80px auto;
 }
 
 .page-section p {
-    font-size: 1.1em;
-    line-height: 1.6em;
+    /*font-size: 1.1em;*/
+    /*line-height: 1.6em;*/
 }
 
 .darkBg {
@@ -296,6 +300,7 @@ a:hover {
 .img-circle {
     border-radius: 5%;
 }
+
 /*--- Banner ----*/
 #overlay {
     position: fixed;
@@ -303,14 +308,14 @@ a:hover {
     height: 100%;
     z-index: 0;
     background-size: 2px 100%;
-    background: url("../images/overlay.png") rgba(0,0,0,.6) !IMPORTANT;
+    background: url("../images/overlay.png") rgba(0, 0, 0, .6) !IMPORTANT;
 }
 
 .banner-container {
     width: 100%;
     position: relative;
     padding: 0px;
-    box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
     max-height: 600px;
     height: 600px;
     background: #0d1836 url("../images/banner-bg.jpg") left bottom no-repeat;
@@ -371,11 +376,13 @@ a:hover {
 .pdingBtm30 {
     padding-bottom: 30px;
 }
+
 /* Services
     -------------------------------------------------*/
 .media-heading {
     color: #fff;
 }
+
 /* Team
     ---------------------------------------------------*/
 .team-member {
@@ -418,7 +425,6 @@ a:hover {
     /*border-bottom: 1px solid #dadde2;*/
     padding: 5px 15px;
 }
-
 
 /* ------- */
 
@@ -523,8 +529,6 @@ nav#filter a {
     transition: all 500ms ease-in-out 0s;
     top: 5px;
 }
-
-
 
 .portfolio-item .portfolio-desc .folio-info h5 {
     text-transform: uppercase;
@@ -714,7 +718,6 @@ footer ul li {
         padding: 25px 12px;
     }
 
-
     .portfolio-item:hover .folio-info {
         top: 0px;
     }
@@ -728,7 +731,7 @@ footer ul li {
     }
 }
 
-@media (max-width:760px) {
+@media (max-width: 760px) {
     .header .navbar-nav > li > a {
         padding: 7px 12px;
         font-size: 14px;
@@ -745,15 +748,18 @@ footer ul li {
         background-size: contain;
         height: 270px;
     }
+
     .header .navbar-brand {
         float: left;
         padding: 10px 0px;
     }
+
     .webThemez {
-        width:100%;
-        text-align:center;
-        display:block;
+        width: 100%;
+        text-align: center;
+        display: block;
     }
+
     .bannerOverlay {
         height: 270px;
     }
@@ -853,4 +859,53 @@ footer ul li {
         display: inline-block;
         margin: 0 0 23px 5px;
     }
+}
+
+.solution {
+    text-align: center;
+    box-shadow: 2px 2px 5px #888888;
+    width: 255px;
+    height: 195px;
+}
+
+.solution_image {
+    text-align: center;
+    width: 255px;
+    height: 155px;
+}
+
+.solution_image:hover {
+    transform: scale(1.2);
+}
+
+.solution_title {
+    width: 255px;
+    height: 45px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.solution .title {
+    height: auto;
+    width: auto;
+    margin-top: 7px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: STHeitiSC-Medium;
+    font-size: 17px;
+    color: #3e3e3e;
+
+}
+
+.des {
+    width: 100%;
+    text-align: left;
+    height: 100%;
+    font-size: 20px;
+    font-family: STHeitiSC-Medium;
+    font-weight: 500;
+    color: rgba(62, 62, 62, 1);
+    line-height: 35px;
+    opacity: 0.8;
 }

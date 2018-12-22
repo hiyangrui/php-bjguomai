@@ -1,8 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"E:\GitHub\bjguomai\public/../application/admin\view\article\lis.html";i:1531811520;s:60:"E:\GitHub\bjguomai\application\admin\view\common\header.html";i:1545389103;s:58:"E:\GitHub\bjguomai\application\admin\view\common\menu.html";i:1530534551;s:60:"E:\GitHub\bjguomai\application\admin\view\common\footer.html";i:1529459493;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:65:"E:\GitHub\bjguomai\public/../application/admin\view\cate\add.html";i:1531792242;s:60:"E:\GitHub\bjguomai\application\admin\view\common\header.html";i:1535716696;s:58:"E:\GitHub\bjguomai\application\admin\view\common\menu.html";i:1530534551;s:60:"E:\GitHub\bjguomai\application\admin\view\common\footer.html";i:1529459493;}*/ ?>
 <!DOCTYPE html>
 <html><head>
     <meta charset="utf-8">
-    <title>后台管理系统</title>
+    <title>Echeverra</title>
 
     <meta name="description" content="Dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +12,12 @@
     <link href="/static/admin//style/bootstrap.css" rel="stylesheet">
     <link href="/static/admin//style/font-awesome.css" rel="stylesheet">
     <link href="/static/admin//style/weather-icons.css" rel="stylesheet">
-    <link rel="shortcut icon" href="___BLOG__/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/static/admin//images/ts.png" type="image/x-icon" />
     <!--Beyond styles-->
     <link id="beyond-link" href="/static/admin//style/beyond.css" rel="stylesheet" type="text/css">
     <link href="/static/admin//style/demo.css" rel="stylesheet">
     <link href="/static/admin//style/typicons.css" rel="stylesheet">
     <link href="/static/admin//style/animate.css" rel="stylesheet">
-    <link rel="bookmark" type="image/x-icon" href="__BLOG__/images/favicon.ico"/>
-    <link rel="shortcut icon" href="__BLOG__/images/favicon.ico">
-    <link rel="icon" href="__BLOG__/images/favicon.ico">
     <style>
         .clear:after {
             content:"";
@@ -38,7 +35,7 @@
             <div class="navbar-header pull-left">
                 <a href="http://www.bjguomai.com//admin" class="navbar-brand">
                     <small>
-                        <img style="width: 130px;margin-left: 10px" src="/static/admin//images/logo.png" alt="">
+                        <img style="width: 150px;margin-left: 10px" src="/static/admin//images/logo.png" alt="">
                     </small>
                 </a>
             </div>
@@ -235,6 +232,7 @@
             
             
 
+
 <!-- Page Content -->
 <div class="page-content">
     <!-- Page Breadcrumb -->
@@ -243,7 +241,10 @@
             <li>
                 <a href="#">系统</a>
             </li>
-            <li class="active">文章管理</li>
+            <li>
+                <a href="<?php echo url('cate/lis'); ?>">栏目列表</a>
+            </li>
+            <li class="active">添加栏目</li>
         </ul>
     </div>
     <!-- /Page Breadcrumb -->
@@ -251,85 +252,87 @@
     <!-- Page Body -->
     <div class="page-body">
 
-        <button type="button" tooltip="添加文章" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url('article/add'); ?>'"> <i class="fa fa-plus"></i> Add
-        </button>
-        <button style="float: right" type="button" tooltip="全部文章" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url('article/lis'); ?>'"> 全部文章
-        </button>
-        <button style="float: right;margin-right: 15px" type="button" tooltip="筛选推荐位" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '<?php echo url('article/filterLis'); ?>'"> 筛选推荐位
-        </button>
         <div class="row">
             <div class="col-lg-12 col-sm-12 col-xs-12">
                 <div class="widget">
+                    <div class="widget-header bordered-bottom bordered-blue">
+                        <span class="widget-caption">添加栏目</span>
+                    </div>
                     <div class="widget-body">
-                        <div class="flip-scroll">
-                            <form action="" method="post">
-                            <table class="table table-bordered table-hover">
-                                <thead class="">
-                                <tr>
-                                    <th class="text-center" width="3%">ID</th>
-                                    <th class="text-center" width="3%">排序</th>
-                                    <th class="text-center" width="5%">文章标题</th>
-                                    <th class="text-center" width="3%">关键字</th>
-                                    <th class="text-center" width="3%">缩略图</th>
-                                    <th class="text-center" width="5%">描述</th>
-                                    <!--<th class="text-center" width="10%">文章内容</th>-->
-                                    <th class="text-center" width="3%">类别</th>
-                                    <th class="text-center" width="3%">是否发布</th>
-                                    <th class="text-center" width="3%">是否推荐</th>
-                                    <th class="text-center" width="3%">文章发布时间</th>
-                                    <th class="text-center" width="5%">操作</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($i % 2 );++$i;?>
-                                <tr>
-                                    <td align="center"><?php echo $article['id']; ?></td>
-                                    <td align="center"><input style="width: 50px; text-align: center" type="text" name="<?php echo $article['id']; ?>" value="<?php echo $article['sort']; ?>" required="required" maxlength="3"></td>
-                                    <td align="center"><?= mb_substr($article['title'], 0, 6, 'utf-8'); if(strlen($article['title'])>6) {echo '...';}; ?></td>
-                                    <td align="center"><?php echo $article['keywords']; ?></td>
-                                    <td align="center">
-                                        <?php if($article['thumb'] == ''): ?>
-                                        无缩略图
-                                        <?php else: ?>
-                                        <img src="http://www.bjguomai.com/<?php echo $article['thumb']; ?>" alt="" style="height: 30px">
-                                        <?php endif; ?>
-                                    </td>
-                                    <!--<td align="center"><?= mb_substr($article['content'], 0, 20, 'utf-8'); if(strlen($article['content'])>20) {echo '...';}; ?></td>-->
-                                    <td align="center"><?= mb_substr($article['desc'], 0, 10, 'utf-8'); if(strlen($article['desc'])>20) {echo '...';}; ?></td>
-                                    <td align="center"><?php echo $article['catename']; ?></td>
-                                    <td align="center">
-                                        <?php if($article['status'] == 1): ?>
-                                        是
-                                        <?php else: ?>
-                                        否
-                                        <?php endif; ?>
-                                    </td>
-                                    <td align="center">
-                                        <?php if($article['recommend'] == 1): ?>
-                                        是
-                                        <?php else: ?>
-                                        否
-                                        <?php endif; ?>
-                                    </td>
-                                    <td align="center"><?= date('Y-m-d H:m:s', $article['time']) ?></td>
-                                    <td align="center">
-                                        <a href="<?php echo url('article/edit', array('id'=>$article['id'])); ?>" class="btn btn-primary btn-sm shiny">
-                                            <i class="fa fa-edit"></i> 编辑
-                                        </a>
-                                        <a href="#" onClick="warning('确实要删除吗', '<?php echo url('article/del', array('id'=>$article['id'])); ?>')" class="btn btn-danger btn-sm shiny">
-                                            <i class="fa fa-trash-o"></i> 删除
-                                        </a>
-                                    </td>
-                                </tr>
-                                <?php endforeach; endif; else: echo "" ;endif; ?>
-                                </tbody>
-                            </table>
-                                <div style="margin-top: 10px;float: left"><input type="submit" class="btn btn-primary" value="排序"></div>
-                                <div class="clear"></div>
+                        <div id="horizontal-form">
+                            <form class="form-horizontal" role="form" action="" method="post">
+                                <div class="form-group">
+                                    <label for="pid" class="col-sm-2 control-label no-padding-right">上级栏目</label>
+                                    <div class="col-sm-6">
+                                        <select name="pid" id="pid" class="form-control">
+                                            <option value="0">顶级栏目</option>
+                                            <?php if(is_array($cates) || $cates instanceof \think\Collection || $cates instanceof \think\Paginator): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?>
+                                            <option value="<?php echo $cate['id']; ?>"><?php if($cate['level'] != 0): ?>|<?php endif; ?><?php echo str_repeat('---', $cate['level']) ?><?php echo $cate['catename']; ?></option>
+                                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                                        </select>
+                                    </div>
+                                    <p class="help-block col-sm-4 red">* 必填</p>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="catename" class="col-sm-2 control-label no-padding-right">栏目名称</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" id="catename" placeholder="" required="required" name="catename" type="text" maxlength="30">
+                                    </div>
+                                    <p class="help-block col-sm-4 red">* 必填</p>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="keywords" class="col-sm-2 control-label no-padding-right">栏目关键字</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" id="keywords" placeholder=""  name="keywords" type="text" maxlength="100">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="desc" class="col-sm-2 control-label no-padding-right">描述</label>
+                                    <div class="col-sm-6">
+                                        <textarea class="form-control" id="desc" placeholder=""  name="desc" type="text" maxlength="255"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="" class="col-sm-2 control-label no-padding-right">推荐位</label>
+                                    <div class="col-sm-6">
+                                        <div class="control-group">
+                                            <div class="radio" style="float: left;margin-right: 10px"><label><input checked="checked" name="recommend" value="1" type="radio"><span class="text">是</span></label></div>
+                                            <div class="radio" style="float: left;margin-right: 10px"><label><input name="recommend" type="radio" value="0"><span class="text">否</span></label></div>
+                                        </div>
+                                    </div>
+                                    <p class="help-block col-sm-4 red">* 必填</p>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="" class="col-sm-2 control-label no-padding-right">栏目类型</label>
+                                    <div class="col-sm-6">
+                                        <div class="control-group">
+                                            <div class="radio" style="float: left;margin-right: 10px"><label><input checked="checked" name="type" value="1" type="radio"><span class="text">文章列表</span></label></div>
+                                            <div class="radio" style="float: left;margin-right: 10px"><label><input name="type" type="radio" value="2"><span class="text">单页</span></label></div>
+                                            <div class="radio" style="float: left;"><label><input name="type" type="radio" value="3"><span class="text">图片列表</span></label></div>
+                                        </div>
+                                    </div>
+                                    <p class="help-block col-sm-4 red">* 必填</p>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="content" class="col-sm-2 control-label no-padding-right">内容</label>
+                                    <div class="col-sm-6">
+                                        <textarea style="resize: none;height: 100px" id="content" placeholder="" name="content" type="text"></textarea>
+                                    </div>
+                                    <p class="help-block col-sm-2 red">* 必填</p>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default">保存信息</button>
+                                    </div>
+                                </div>
                             </form>
-                        </div>
-                        <div style="margin-top: 10px; text-align: right">
-                            <?php echo $articles->render(); ?>
                         </div>
                     </div>
                 </div>
@@ -340,6 +343,17 @@
     <!-- /Page Body -->
 </div>
 <!-- /Page Content -->
+
+
+<script src="/static/admin//UEditor/ueditor.config.js"></script>
+<script src="/static/admin//UEditor/ueditor.all.min.js"></script>
+<script src="/static/admin//UEditor/ueditor.parse.min.js"></script>
+
+<script>
+
+    var ue = UE.getEditor('content');
+
+</script>
 
 
 

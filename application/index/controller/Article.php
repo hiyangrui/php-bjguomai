@@ -11,8 +11,10 @@ class Article extends Base
 
         //获取推荐文章
         $articleModel = new ArticleModel();
-        $hotArticles = $articleModel->getHotArticles($article['cateid'], 3);
+        $hotArticles = $articleModel->getHotArticles($article['cateid'], 5);
         $this->assign(['article'=>$article, 'hotArticles'=>$hotArticles]);
         return $this->fetch('article');
+
+
     }
 }

@@ -9,8 +9,16 @@ class Index extends Base
     {
         $articleModel = new ArticleModel();
         $articles = $articleModel->getAllAllArticles();
+       // dump($articles);
+        $EduInfoSystem = $articleModel->getEduInfoSystem(input('cateid'), 5);
+        $EduRoomSolution = $articleModel->getEduRoomSolution(input('cateid'), 5);
+        $Instruments = $articleModel->getInstruments(input('cateid'), 5);
+
+
+        $this->assign(['EduInfoSystem'=>$EduInfoSystem, 'EduInfoSystem'=>$EduInfoSystem]);
+        $this->assign(['EduRoomSolution'=>$EduRoomSolution, 'EduRoomSolution'=>$EduRoomSolution]);
+        $this->assign(['Instruments'=>$Instruments, 'Instruments'=>$Instruments]);
         $this->assign(['articles'=>$articles]);
-        //dump($articles);die;
         return $this->fetch('index');
     }
 }
