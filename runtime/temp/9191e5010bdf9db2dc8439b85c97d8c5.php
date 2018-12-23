@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"E:\GitHub\bjguomai\public/../application/admin\view\article\add.html";i:1531792624;s:60:"E:\GitHub\bjguomai\application\admin\view\common\header.html";i:1545389103;s:58:"E:\GitHub\bjguomai\application\admin\view\common\menu.html";i:1530534551;s:60:"E:\GitHub\bjguomai\application\admin\view\common\footer.html";i:1529459493;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:68:"E:\GitHub\bjguomai\public/../application/admin\view\article\add.html";i:1531792624;s:60:"E:\GitHub\bjguomai\application\admin\view\common\header.html";i:1545389103;s:58:"E:\GitHub\bjguomai\application\admin\view\common\menu.html";i:1545557490;s:60:"E:\GitHub\bjguomai\application\admin\view\common\footer.html";i:1529459493;}*/ ?>
 <!DOCTYPE html>
 <html><head>
     <meta charset="utf-8">
@@ -107,7 +107,7 @@
             <div class="sidebar-header-wrapper">
                 <input class="searchinput" type="text">
                 <i class="searchicon fa fa-search"></i>
-                <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+                <div class="searchhelper">请输入搜索关键词</div>
             </div>
             <!-- /Page Sidebar Header -->
             <!-- Sidebar Menu -->
@@ -232,8 +232,8 @@
             <!-- /Sidebar Menu -->
         </div>
         <!-- /Page Sidebar -->
-            
-            
+    </div>
+</div>
 
 <!-- Page Content -->
 <div class="page-content">

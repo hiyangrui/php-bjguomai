@@ -33,8 +33,8 @@ p {
 }
 
 h2 {
-    font-variant: small-caps;
-    font-size: 3em;
+    /*font-variant: small-caps;*/
+    /*font-size: 3em;*/
 }
 
 h3 {
@@ -245,15 +245,15 @@ a:hover {
 }
 
 .page-section h2 {
-    width: 126px;
-    height: 30px;
-    font-size: 31px;
-    font-family: STHeitiSC-Medium;
-    font-weight: 500;
-    color: rgba(16, 16, 16, 1);
-    opacity: 0.8;
+    /*width: 126px;*/
+    /*height: 30px;*/
+    font-size: 30px;
+    /*font-family: STHeitiSC-Medium;*/
+    /*font-weight: 500;*/
+    color: #3e3e3e;
+    /*opacity: 0.8;*/
     text-align: center;
-    margin: 80px auto;
+    /*margin: 0 0 0 0;*/
 }
 
 .page-section p {
@@ -366,7 +366,7 @@ a:hover {
 }
 
 .heading {
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
 }
 
 .heading p {
@@ -404,8 +404,8 @@ a:hover {
 .team-member h3 {
     font-size: 22px;
     line-height: 32px;
-    margin: 10px 0 0 15px;
-    /*text-align:center;*/
+    /*margin: 10px 0 0 15px;*/
+    text-align:center;
 }
 
 .team-member .pos {
@@ -665,7 +665,7 @@ footer ul li {
 }
 
 .da-slide {
-    top: 15%;
+    top: 12%;
 }
 
 @media (min-width: 768px) {
@@ -864,39 +864,52 @@ footer ul li {
 .solution {
     text-align: center;
     box-shadow: 2px 2px 5px #888888;
-    width: 255px;
-    height: 195px;
+    width: 216px;
+    height: 198px;
+    margin-bottom: 67px;
 }
 
-.solution_image {
+.solution img {
     text-align: center;
-    width: 255px;
-    height: 155px;
+    width: 216px;
+    height: 126px;
 }
 
-.solution_image:hover {
-    transform: scale(1.2);
+.solution img:hover {
+    transform: scale(1.4);
 }
 
 .solution_title {
-    width: 255px;
-    height: 45px;
+    width: 216px;
+    height: 72px;
     text-align: center;
     vertical-align: middle;
 }
 
-.solution .title {
-    height: auto;
-    width: auto;
-    margin-top: 7px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+.solution h3 {
+    width: 100%;
+    height:100%;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
     font-family: STHeitiSC-Medium;
     font-size: 17px;
     color: #3e3e3e;
-
+    line-height: 1.3em;
 }
+
+/*.solution .title {*/
+    /*height: auto;*/
+    /*width: auto;*/
+    /*margin-top: 7px;*/
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
+    /*font-family: STHeitiSC-Medium;*/
+    /*font-size: 17px;*/
+    /*color: #3e3e3e;*/
+
+/*}*/
 
 .des {
     width: 100%;
@@ -905,7 +918,15 @@ footer ul li {
     font-size: 20px;
     font-family: STHeitiSC-Medium;
     font-weight: 500;
-    color: rgba(62, 62, 62, 1);
-    line-height: 35px;
+    color: #3e3e3e;
+    line-height: 2.2em;
     opacity: 0.8;
+    text-indent:2em;
+}
+
+.l{
+    width: 2px;
+    height: 80px;
+    margin: 35px 50% 40px 50%;
+    background: #3e3e3e;
 }

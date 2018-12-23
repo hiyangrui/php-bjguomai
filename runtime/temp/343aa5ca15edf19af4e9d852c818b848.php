@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:65:"E:\GitHub\bjguomai\public/../application/admin\view\cate\lis.html";i:1532144645;s:60:"E:\GitHub\bjguomai\application\admin\view\common\header.html";i:1545389103;s:58:"E:\GitHub\bjguomai\application\admin\view\common\menu.html";i:1530534551;s:60:"E:\GitHub\bjguomai\application\admin\view\common\footer.html";i:1529459493;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:65:"E:\GitHub\bjguomai\public/../application/admin\view\cate\lis.html";i:1532144645;s:60:"E:\GitHub\bjguomai\application\admin\view\common\header.html";i:1545389103;s:58:"E:\GitHub\bjguomai\application\admin\view\common\menu.html";i:1545554786;s:60:"E:\GitHub\bjguomai\application\admin\view\common\footer.html";i:1529459493;}*/ ?>
 <!DOCTYPE html>
 <html><head>
     <meta charset="utf-8">
@@ -232,8 +232,8 @@
             <!-- /Sidebar Menu -->
         </div>
         <!-- /Page Sidebar -->
-            
-            
+    </div>
+</div>
 
 <!-- Page Content -->
 <div class="page-content">
